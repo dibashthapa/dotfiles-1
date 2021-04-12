@@ -4,7 +4,7 @@ Feel free to get all you need in these dotfiles :D.
 
 ## Images
 
-![Desktop](./up.png "Desktop")
+![Desktop](./demo.png "Desktop")
 
 ## Readmes
 
