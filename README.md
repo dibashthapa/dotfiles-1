@@ -24,7 +24,7 @@ Compositor: Picom
 Terminal: Konsole with [ArcticIceStudio nord theme](https://github.com/arcticicestudio/nord-konsole)  
 Browser: [Brave](https://brave.com/)  
 File Manager: PCManFM  
-System Info: Htop, Neofetch and [Pfetch](https://github.com/dylanaraps/pfetch)  
+System Info: [Pfetch](https://github.com/dylanaraps/pfetch)  
 
 Wallpaper: [Nord Sinon](https://imgur.com/KBADsWK)  
 
