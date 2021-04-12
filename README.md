@@ -4,10 +4,10 @@ Feel free to get all you need in these dotfiles :D.
 
 ## Images
 
-[desktop](./image3.png)
-[pfetch and cmatrix](./image1.png)
-[rofi](./image2.png)
-[brave and pcmanfm](./image4.png)
+![Desktop](./image3.png "Desktop")
+![Pfetch and Cmatrix](./image1.png "Pfetch and Cmatrix")
+![Rofi](./image2.png "Rofi")
+![Brave and PCManFM](./image4.png "Brave and PCManFM")
 
 ## Readmes
 
