@@ -1,0 +1,135 @@
+configuration {
+
+	font: "JetBrains Mono Medium Nerd Font Italic 10";
+	width: 60;
+	line-margin: 10;
+	lines: 8;
+	columns: 2;
+
+    display-ssh:    "SSH:";
+    display-run:    "Run:";
+    display-drun:   "DRun:";
+    display-window: "Window:";
+    display-combi:  "Combi:";
+    show-icons:     true;
+}
+
+* {
+	polar1: #2e3440;
+	polar2: #3b4252;
+	polar3: #434c5e;
+	polar4: #4c566a;
+
+	snow1: #d8dee9;
+	snow2: #e5e9f0;
+	snow3: #eceff4;
+
+	frost1: #8fbcbb;
+	frost2: #88c0d0;
+	frost3: #81a1c1;
+	frost4: #5e81ac;
+
+	aurora1: #bf616a;
+	aurora2: #d08770;
+	aurora3: #ebcb8b;
+	aurora4: #a3be8c;
+	aurora5: #b48ead;
+
+    foreground:  @transparent;
+    backlight:   #ccffeedd;
+    background-color:  transparent;
+    
+    /* highlight:     underline bold #eceff4; */
+
+    /* transparent: rgba(46,52,64,0); */
+}
+
+window {
+    location: center;
+    anchor:   center;
+    transparency: "screenshot";
+    padding: 1px;
+    border:  0px;
+    border-radius: 5px;
+
+    background-color: @frost1;
+    spacing: 0;
+    children:  [mainbox];
+    orientation: horizontal;
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+message {
+    color: @polar1;
+    padding: 5;
+    border-color: @foreground;
+    border:  0px 2px 2px 2px;
+    background-color: @snow3;
+}
+
+inputbar {
+    color: @frost1;
+    padding: 11px;
+    font: "JetBrains Mono Medium Nerd Font 30";
+    background-color: @polar1;
+
+    border: 1px;
+    border-radius:  4px 4px 0px 0px;
+    border-color: @transparent;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {
+    padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+    border-color: @transparent;
+    border: 0px 1px 1px 1px;
+    background-color: @polar3;
+    dynamic: false;
+}
+
+element {
+    padding: 15px;
+    vertical-align: 0.5;
+    border-radius: 4px;
+    background-color: transparent;
+    color: @frost1;
+    text-color: @frost1;
+}
+
+element-icon {
+    size: 20px;
+    padding: 0px 10px 0px 0px;
+}
+
+element selected.normal {
+	background-color: @frost1;
+	text-color: @polar2;
+}
+
+button {
+    padding: 6px;
+    color: @foreground;
+    horizontal-align: 0.5;
+
+    border: 2px 0px 2px 2px;
+    border-radius: 4px 0px 0px 4px;
+    border-color: @transparent;
+}
+
+button selected normal {
+    border: 2px 0px 2px 2px;
+    border-color: @foreground;
+}
