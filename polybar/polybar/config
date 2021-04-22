@@ -1,0 +1,375 @@
+[colors]
+;================================== Pastel Colorscheme
+pastel-basic1 = #ffffff
+pastel-basic2 = #000000
+pastel1 = #abdee6
+pastel2 = #cbaacb
+pastel3 = #ffffb5
+pastel4 = #ffccb6
+pastel5 = #f3b0c3
+pastel6 = #c6dbda
+pastel7 = #fee1e8
+pastel8 = #fed7c3
+pastel9 = #f6eac2
+pastel10 = #ecd5e3
+pastel11 = #ff968a
+pastel12 = #ffaea5
+pastel13 = #ffc5bf
+pastel14 = #ffd8be
+pastel15 = #ffc8a2
+pastel16 = #d4f0f0
+pastel17 = #8fcaca
+pastel18 = #cce2cb
+pastel19 = #b6cfb6
+pastel20 = #97c1a9
+pastel21 = #fcb9aa
+pastel22 = #ffdbcc
+pastel23 = #eceae4
+pastel24 = #a2e1db
+pastel25 = #55cbcd
+;================================= Dracula Colorscheme
+dracula1 = #282a36
+dracula2 = #44475a
+dracula3 = #f8f8f2
+dracula4 = #6272a4
+dracula5 = #8be9fd
+dracula6 = #50fa7b
+dracula7 = #ffb86c
+dracula8 = #ff79c6
+dracula9 = #bd93f9
+dracula10 = #ff5555
+dracula11 = #f1fa8c
+;================================= Gruvbox Colorscheme
+gruvbox-dark-tone1 = #1d2021
+gruvbox-dark-tone2 = #282828
+gruvbox-dark-tone3 = #32302f
+gruvbox-dark-tone4 = #3c3836
+gruvbox-dark-tone5 = #504945
+gruvbox-dark-tone6 = #665c54
+gruvbox-dark-tone7 = #7c6f64
+
+gruvbox-mid = #928374
+
+gruvbox-light1 = #ffffc8
+gruvbox-light2 = #fdf4c1
+gruvbox-light3 = #f4e8ba
+gruvbox-light4 = #ebdbb2
+gruvbox-light5 = #d5c4a1
+gruvbox-light6 = #bdae93
+gruvbox-light7 = #a89984
+
+gruvbox-bright1 = #fb4933
+gruvbox-bright2 = #b8bb26
+gruvbox-bright3 = #fabd2f
+gruvbox-bright4 = #83a598
+gruvbox-bright5 = #d3869b
+gruvbox-bright6 = #8ec07c
+gruvbox-bright7 = #fe8019
+
+gruvbox-faded1 = #9d0006
+gruvbox-faded2 = #79740e
+gruvbox-faded3 = #b57614
+gruvbox-faded4 = #076678
+gruvbox-faded5 = #8f3f71
+gruvbox-faded6 = #427b58
+gruvbox-faded7 = #af3a03
+
+gruvbox-dark-note1 = #421e1e
+gruvbox-dark-note2 = #2b3c44
+gruvbox-dark-note3 = #36473a
+
+gruvbox-solo1 = #dd6f48
+gruvbox-solo2 = #52888b
+gruvbox-solo3 = #66999d
+gruvbox-solo4 = #bbaa97
+gruvbox-solo5 = #83a598
+gruvbox-solo6 = #61acbb
+
+gruvbox-rainbow1 = #458588
+gruvbox-rainbow2 = #b16286
+gruvbox-rainbow3 = #8ec07c
+gruvbox-rainbow4 = #d65b0e
+;==================================== Nord Colorscheme
+nord-polar1 = #2e3440
+nord-polar2 = #3b4252
+nord-polar3 = #434c5e
+nord-polar4 = #4c566a
+
+nord-snow1 = #d8dee9
+nord-snow2 = #e5e9f0
+nord-snow3 = #eceff4
+
+nord-frost1 = #8fbcbb
+nord-frost2 = #88c0d0
+nord-frost3 = #81a1c1
+nord-frost4 = #5e81ac
+
+nord-aurora1 = #bf616a
+nord-aurora2 = #d08770
+nord-aurora3 = #ebcb8b
+nord-aurora4 = #a3be8c
+nord-aurora5 = #b48ead
+
+;================================= Modules Colorscheme
+;bar
+bar-bg = ${colors.nord-polar2}
+bar-fg = ${colors.nord-frost3}
+
+;module/i3
+i3-label-mode-bg = ${colors.nord-aurora3}
+i3-label-mode-fg = ${colors.nord-polar2}
+i3-label-focused-bg = ${colors.nord-polar3}
+i3-label-focused-fg = ${colors.nord-snow1}
+i3-label-urgent-bg = ${colors.nord-aurora1}
+i3-label-urgent-fg = ${colors.nord-snow1}
+
+;module/date
+date-bg = ${colors.nord-frost4}
+date-fg = ${colors.nord-polar1}
+
+;module/volume
+volume-bg = ${colors.nord-frost1}
+volume-fg = ${colors.nord-polar1}
+
+;module/battery
+battery-bg = ${colors.nord-polar4}
+battery-fg = ${colors.nord-frost3}
+
+;module/powermenu
+powermenu-open-bg = ${colors.nord-frost2}
+powermenu-open-fg = ${colors.nord-polar3}
+powermenu-menu-00-bg = ${colors.nord-aurora1}
+powermenu-menu-00-fg = ${colors.nord-snow1}
+powermenu-menu-01-bg = ${colors.nord-aurora3}
+powermenu-menu-01-fg = ${colors.nord-polar3}
+
+;module/menu
+appmenu-open-bg = ${colors.nord-frost4}
+appmenu-open-fg = ${colors.nord-polar1}
+appmenu-menu-00-bg = ${colors.nord-frost3}
+appmenu-menu-00-fg = ${colors.nord-polar1}
+
+;========================================== Bar - Main
+[bar/main]
+width = 100%
+height = 30
+radius = 3
+fixed-center = true
+
+background = ${colors.bar-bg}
+foreground = ${colors.bar-fg}
+
+border-size = 6
+border-color = #00000000
+
+font-0 = Quicksand:style=Bold:size=10;2
+font-1 = Fira Code Nerd Font:style=Medium:size=12;2
+font-2 = Fira Code Nerd Font:style=Medium:size=6;2
+font-3 = Fira Code Nerd Font:style=Medium:size=3;2
+
+modules-left = menu i3
+modules-center = xwindow
+modules-right = volume date battery powermenu
+
+wm-restack = i3
+
+[bar/secondary]
+monitor = VGA1
+width = 100%
+height = 30
+radius = 3
+fixed-center = true
+
+background = ${colors.bar-bg}
+foreground = ${colors.bar-fg}
+
+border-size = 6
+border-color = #00000000
+
+font-0 = Quicksand:style=Bold:size=10;2
+font-1 = Fira Code Nerd Font:style=Medium:size=12;2
+font-2 = Fira Code Nerd Font:style=Medium:size=6;2
+font-3 = Fira Code Nerd Font:style=Medium:size=3;2
+
+modules-left = menu i3
+modules-center = xwindow
+modules-right = volume date battery powermenu
+
+wm-restack = i3
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:70:...%
+label-empty = Desktop
+label-empty-maxlen = 70
+
+[module/i3]
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+
+format = <label-state> <label-mode>
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-background = ${colors.i3-label-mode-bg}
+label-mode-foreground = ${colors.i3-label-mode-fg}
+
+label-focused =  %index%
+label-focused-background = ${colors.i3-label-focused-bg}
+label-focused-foreground = ${colors.i3-label-focused-fg}
+label-focused-padding = 3
+
+label-unfocused = %index%
+label-unfocused-padding = ${self.label-focused-padding}
+
+label-visible = %index%
+label-visible-padding = ${self.label-focused-padding}
+
+label-urgent = %index%
+label-urgent-foreground = ${colors.i3-label-urgent-bg}
+label-urgent-background = ${colors.i3-label-urgent-fg}
+label-urgent-padding = ${self.label.focused-padding}
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%d/%m -"
+date-alt = "%d/%m -"
+
+time = %l:%M %p
+time-alt = %l:%M
+
+label = %date% %time%
+label-padding = 3
+label-background = ${colors.date-bg}
+label-foreground = ${colors.date-fg}
+
+[module/volume]
+type = internal/volume
+
+format-volume = <label-volume> 
+label-volume = %percentage%%
+label-volume-padding = 3
+label-volume-background = ${colors.volume-bg}
+label-volume-foreground = ${colors.volume-fg}
+
+format-muted-foreground = ${colors.secondary}
+label-muted = muted
+label-muted-padding = ${self.label-volume-padding}
+label-muted-background = ${self.label-volume-background}
+label-muted-foreground = ${self.label-volume-foreground}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 96
+
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+format-full = <label-full>
+
+label-charging = %percentage%%
+label-charging-background = ${colors.battery-bg}
+label-charging-foreground = ${colors.battery-fg}
+label-charging-padding = 3
+
+label-discharging = %percentage%%
+label-discharging-background = ${self.label-charging-background}
+label-discharging-foreground = ${self.label-charging-foreground}
+label-discharging-padding = ${self.label-charging-padding}
+
+label-full = %percentage%%
+label-full-background = ${self.label-charging-background}
+label-full-foreground = ${self.label-charging-foreground}
+label-full-padding = ${self.label-charging-padding}
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[module/powermenu]
+type = custom/menu
+
+label-open = 
+label-open-background = ${colors.powermenu-open-bg}
+label-open-foreground = ${colors.powermenu-open-fg}
+label-open-padding = 3
+
+label-close = "%{T4} %{T-}%{T2}  %{T-}%{T4} %{T-}"
+label-close-background = ${self.label-open-background}
+label-close-foreground = ${self.label-open-foreground}
+
+menu-0-0 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-0-exec = shutdown now
+menu-0-0-background = ${colors.powermenu-menu-00-bg}
+menu-0-0-foreground = ${colors.powermenu-menu-00-fg}
+
+menu-0-1 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-1-exec = reboot
+menu-0-1-background = ${colors.powermenu-menu-01-bg}
+menu-0-1-foreground = ${colors.powermenu-menu-01-fg}
+
+[module/menu]
+type = custom/menu
+
+expand-right = true
+
+label-open = "%{T2}  %{T-}%{T3} %{T-}" 
+label-open-background = ${colors.appmenu-open-bg}
+label-open-foreground = ${colors.appmenu-open-fg}
+
+label-close = "%{T4} %{T-}%{T2}  %{T-}%{T4} %{T-}"
+label-close-background = ${self.label-open-background}
+label-close-foreground = ${self.label-open-foreground}
+
+menu-0-0 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-0-exec = rofi -show drun
+menu-0-0-background = ${colors.appmenu-menu-00-bg}
+menu-0-0-foreground = ${colors.appmenu-menu-00-fg}
+
+menu-0-1 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-1-exec = brave
+menu-0-1-background = ${self.menu-0-0-background}
+menu-0-1-foreground = ${self.menu-0-0-foreground}
+
+menu-0-2 = "%{T2} ﲋ %{T-}%{T4}  %{T-}"
+menu-0-2-exec = surf duckduckgo.com
+menu-0-2-background = ${self.menu-0-0-background}
+menu-0-2-foreground = ${self.menu-0-0-foreground}
+
+menu-0-2-0 = "%{T2} ﲋ %{T-}%{T4}  %{T-}"
+menu-0-2-0-exec = surf duckduckgo.com
+menu-0-2-0-background = ${self.menu-0-0-background}
+menu-0-2-0-foreground = ${self.menu-0-0-foreground}
+
+menu-0-3 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-3-exec = konsole
+menu-0-3-background = ${self.menu-0-0-background}
+menu-0-3-foreground = ${self.menu-0-0-foreground}
+
+menu-0-4 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-4-exec = minecraft-launcher
+menu-0-4-background = ${self.menu-0-0-background}
+menu-0-4-foreground = ${self.menu-0-0-foreground}
+
+menu-0-5 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-5-exec = gnome-screenshot -i
+menu-0-5-background = ${self.menu-0-0-background}
+menu-0-5-foreground = ${self.menu-0-0-foreground}
+
+menu-0-6 = "%{T2}  %{T-}%{T4}  %{T-}"
+menu-0-6-exec = konsole -e ssh -p 8022 "192.168.0.44"
+menu-0-6-background = ${self.menu-0-0-background}
+menu-0-6-foreground = ${self.menu-0-0-foreground}
