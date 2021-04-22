@@ -1,0 +1,3 @@
+rofi.theme: /home/lax/.config/rofi/themes/nord.rasi
+rofi.modi: drun,ssh,run
+
